@@ -26,4 +26,6 @@ public class ProdutoComposto extends Produto {
 		}
 		desconto = new Desconto(descontTemp);
 	}
+	
+
 }

@@ -7,12 +7,15 @@ import Gerencia_Produtos.ProdutoComposto;
 import Gerencia_Produtos.ProdutoUnitario;
 
 public class Executar {
-
 	public static void main(String[] args) {
+		
 		Desconto desconto = new Desconto(30);
 		
-		Produto p1 = new ProdutoUnitario("Baleia","PEza + 8T,apresenta ruidos insurdesedores, e se mete em tudo",1000,desconto);
-		Produto p2 = new ProdutoUnitario("Lula","Lula frita quentinah qeu derrete na boca",5000,desconto);	
+		Produto p1 = new ProdutoUnitario("Baleia","Peza + 8T,apresenta ruidos ensurdecedores, e se mete em tudo",1000,desconto);
+		
+		Desconto desconto2 = new Desconto(5);
+		
+		Produto p2 = new ProdutoUnitario("Lula","Lula frita quentinha que derrete na boca",5000,desconto2);	
 		
 		ArrayList<Produto> produtos = new ArrayList<Produto>();
 		
@@ -20,7 +23,12 @@ public class Executar {
 		produtos.add(p2);
 		
 		Produto kit = new ProdutoComposto("Kit de informática", produtos);
-		 System.out.println(kit.getValorComDesconto());
+		System.out.println(kit.getValorComDesconto());
+		for(Produto p : produtos) {
+			System.out.println(p.);
+		}
+		//System.out.println(p1.getValorNormal());
+		
 	}
-
+	
 }

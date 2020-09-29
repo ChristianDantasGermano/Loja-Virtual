@@ -8,4 +8,5 @@ public class ProdutoUnitario extends Produto{
 		this.descricao = descricao;
 		this.desconto = desconto;
 	}
+	
 }
