@@ -1,16 +1,12 @@
 package Gerencia_Produtos;
 
-import java.util.ArrayList;
-
-import Execucao.Executar;
-
 public abstract class Produto {
 	protected String nome;
 	protected double valorProduto;
 	protected String descricao;
 	public Desconto desconto;
 	protected CalculadorPreco calculadorPreco;
-	protected Executar executar;
+	
 	public Produto() {
 	}
 	
@@ -24,6 +20,10 @@ public abstract class Produto {
 		
 	public Desconto getDesconto() {
 		return desconto;
+	}
+
+	public String getDescricao() {
+		return descricao;
 	}
 
 	public double getValorComDesconto() {
